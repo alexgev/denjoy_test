@@ -1,9 +1,8 @@
 var app = angular.module('app', []);
 
 app.controller('mainCtrl', function($scope, AppDataService) {
-
     AppDataService.getData()
-        .then(function(result) {$scope.results = result.data; console.log($scope.results)},
+        .then(function(result) {$scope.results = result.data},
               function(err) {console.log(err)});
 })
 
@@ -28,7 +27,7 @@ app.directive('appTable', function() {
         restrict: 'E',
         templateUrl: 'appTable.html',
         link: function(scope, element, attr) {
-            
+            console.log('appTable init');
         }
     }
 })
