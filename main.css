@@ -1,0 +1,14 @@
+.app__table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.app__table td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.app__table th {
+    padding: 5px;
+    border: 1px solid black;
+}

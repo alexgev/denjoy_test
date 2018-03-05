@@ -1,0 +1,11 @@
+<table class='app__table'>
+    <tr><th>Rating</th><th>Game</th><th>RatingDelta</th><th>IsWin</th><th>CreationTime</th><th>EndTime</th></tr>
+    <tr ng-repeat="result in results">
+        <td>{{ result.Rating }}</td>
+        <td>{{ result.Game }}</td>
+        <td>{{ result.RatingDelta }}</td>
+        <td>{{ result.IsWin }}</td>
+        <td>{{ result.CreationTime | momentFilter:'DD/MM/YYYY' }}</td>
+        <td>{{ result.EndTime | momentFilter:'DD/MM/YYYY' }}</td>
+    </tr>
+</table>
