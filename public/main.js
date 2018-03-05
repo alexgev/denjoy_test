@@ -25,7 +25,7 @@ app.factory('AppDataService', function($http) {
 app.directive('appTable', function() {
     return {
         restrict: 'E',
-        templateUrl: 'appTable.html',
+        templateUrl: 'templates/appTable.html',
         link: function(scope, element, attr) {
             console.log('appTable init');
         }
